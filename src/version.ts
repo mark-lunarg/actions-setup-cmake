@@ -152,7 +152,7 @@ export async function getLatestMatching(
     .filter((v) => !v.draft && !v.prerelease)
     .filter((v) => semver.satisfies(v.name, version));
   if (matching_versions.length == 0) {
-    throw new Error('Unable to find version matching ' + version + ' other vers ' + verson_list);
+    throw new Error('Unable to BAD VERSION LIST' + verson_list);
   }
   return getLatest(matching_versions);
 }
